@@ -1,14 +1,191 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div id="contenedor">
+      <header id="header">
+        <span>¡NUEVOS LANZAMIENTOS!</span>
+        <!-- <span>HASTA 50% OFF</span>
+          <span>COVID-19 | VER MÁS SOBRE NUESTROS TIEMPOS Y SERVICIOS</span> -->
+      </header>
+      <nav id="nav">
+        <div class="logo-container">
+          <img class="logo" src="/src/asses/logoMagari.jpeg" alt="logoMagari" />
+        </div>
+        <div class="menuPago">
+          <ul class="navMenu">
+            <li class="list"><span class="bubble">1</span>CARRITO</li>
+            <li class="list"><span class="bubble">2</span>ENTREGA</li>
+            <li class="list"><span class="bubble">3</span>PAGO</li>
+            <li class="list"><span class="bubble">4</span>PEDIDO COMPLETADO</li>
+          </ul>
+          <hr />
+        </div>
+      </nav>
+      <div id="contenido">
+        <section id="form-section">
+          <p id="description" class="descriptionPayment">METODO DE PAGO</p>
+          <p class="descriptionText">
+            Todas las transacciones se realizan de manera segura
+          </p>
+          <form class="form-pago">
+            <p class="text-creditCard">
+              <span class="bubble point">·</span>CREDIT CARD
+            </p>
+            <hr />
+
+            <!-- <div class="compra"><input type="text"
+              class="form-control"
+              placeholder="descripcion de compra"
+              id="nombre"
+              name="nombre"></div> -->
+            <div class="name">
+              <input
+                type="text"
+                class="form-text"
+                placeholder="Titular de la tarjeta"
+                id="nombre"
+                name="nombre"
+                maxlength="20"
+                required
+              />
+            </div>
+            <div class="cardNumber" id="card-number-field">
+              <input
+                type="text"
+                class="form-text"
+                placeholder="Número de Tarjeta"
+                id="cardNumber"
+                name="cardNumber"
+                maxlength="16"
+                required
+              />
+            </div>
+            <div class="group-form">
+              <div class="form-group" id="expiration-date">
+                <input
+                  type="month"
+                  class="input-double"
+                  id="fecha-exp"
+                  value="MM/AA*"
+                  required
+                />
+                <label class="form-textExp">Fecha de Expiración</label>
+              </div>
+              <div class="cvv">
+                <input
+                  type="text"
+                  class="input-double"
+                  placeholder="CVV*"
+                  id="cvv"
+                  maxlength="3"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group" id="credit_cards">
+              <!-- <img src="" id="visa" />
+              <img src="" id="mastercard" />
+              <img src="" id="amex" /> -->
+            </div>
+            <div class="form-group" id="pay-now">
+              <p class="resumen-pedido">RESUMEN DE PEDIDO</p>
+              <span class="span-entrega">Entrega</span>
+              <p class="span-total">TOTAL</p>
+            </div>
+
+            <button type="submit" class="btn-pagar" id="btn-pagar">
+              PAGAR
+            </button>
+            <p class="condiciones">
+              Al hacer click en PAGAR aceptas los Términos y condiciones y
+              Delivery Terms.
+            </p>
+          </form>
+        </section>
+        <section id="form-section2">
+          <h3 class="titulo-datosPedido">DATOS DEL PEDIDO</h3>
+          <div class="form-pedido">
+            <img
+              src="/src/asses/camisaMagari.jpeg"
+              alt="camisaMagariShop"
+              class="camisaMagari"
+            />
+
+            <div class="descripcion-pedido">
+              <p>Blusa de cuello alto</p>
+              <p>COLOR: Beige</p>
+              <p>TALLA: M</p>
+              <p>CANTIDAD: 1</p>
+              <p>$102.000,00</p>
+            </div>
+          </div>
+          <hr />
+          <article class="direccion-entrega">
+            <h5>DIRECCIÓN DE ENTREGA</h5>
+            <div class="direccion">
+              <span class="span-fac"> Andry Salazar</span>
+              <span class="span-fac"> Calle 183 #8a-10</span>
+              <span class="span-fac">
+                BOGOTA/USAQUEN, DC, 110111, Colombia</span
+              >
+              <span class="span-fac"> 3016940504</span>
+            </div>
+          </article>
+          <article class="datos-fact">
+            <h5>DATOS DE FACTURACIÓN</h5>
+            <div class="datos-fact">
+              <span class="span-fac"> Andry Salazar</span>
+              <span class="span-fac"> Calle 183 #8a-10</span>
+              <span class="span-fac">
+                BOGOTA/USAQUEN, DC, 110111, Colombia</span
+              >
+              <span class="span-fac"> 3016940504</span>
+              <span class="span-fac"> avesalazar4@gmail.com </span>
+            </div>
+          </article>
+          <article class="opcion-envio">
+            <h5>OPCIÓN DE ENVÍO</h5>
+            <span class="span-fac"> El lunes 12 Diciembre </span>
+            <span class="span-fac"> Envío Estándar </span>
+            <span class="span-fac"> 08:00 - 17:00 </span>
+            <span class="span-fac"> GRATIS </span>
+          </article>
+          <article class="forma-de-pago">
+            <h5>FORMAS DE PAGO ACEPTADAS</h5>
+            <img
+              src="/src/asses/mastercard_payment_method_icon_142750.png"
+              alt="logo-mastercard"
+              class="target"
+            />
+            <img
+              src="/src/asses/if-visa-2593666_86609.png"
+              alt="logo-visa"
+              class="target"
+            />
+            <img
+              src="/src/asses/amex_payment_method_icon_142710.png"
+              alt="logo-americanExpress"
+              class="target"
+            />
+            <img
+              src="/src/asses/amex_82052.png"
+              alt="logo-amex"
+              class="target"
+            />
+          </article>
+        </section>
+      </div>
+      <footer id="footer">footer</footer>
+    </div>
     <script src="index.js" type="module"></script>
   </body>
 </html>

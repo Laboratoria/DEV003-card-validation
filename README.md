@@ -462,3 +462,6 @@ Project Feedback:
 * [ ] El proyecto será entregado subiendo tu código a GitHub.
 * [ ] La interfaz será "desplegada" usando GitHub Pages.
 * [ ] El README contiene una definición del producto.
+
+Mi proceso de mi proyecto fue crear una solución para la comodidad del ususario final, para que pueda comprar un producto o pagar un servicio desde donde este,solo con acceso a
+internet,

@@ -1,6 +1,26 @@
+//alert("hola");
 const validator = {
 
+   isValid: function (cardNumber) {
+      let sumaTotal = 0;
+      const numeros = Array.from(cardNumber,number);
+      for (let i = 0; i <numeros.length; i + - 2){
+         let doblarNumeros = numeros[i]*2
+         console.log(doblarNumeros);
+         if(doblarNumeros > 9){
+            doblarNumeros = doblarNumeros -9
+         }
+         sumaTotal = sumaTotal + doblarNumeros
+      }
+   for (let i = 1; i < numeros.length; i + - 2){
+      let imparNumeros = numeros[i]
+      sumaTotal = sumaTotal + imparNumeros
+   }
+   return (sumaTotal%10 === 0);
+     },
+
    
+      
 
   
    maskify: function(cardNumber){
@@ -14,15 +34,19 @@ const validator = {
          console.log(mask)
          return mask
       }
-      console.log("este es un mensaje en consola");
       return mask
    }
-return mask
-
-    
+   
+   
 }
+
+
+
+
+
+
   
-isValid(cardNumber) {
+/*isValid: function (cardNumber) {
    let sumaTotal = 0;
    const numeros = Array.from(cardNumber,number);
    for (let i = 0; i <numeros.length; i + - 2){
@@ -32,10 +56,13 @@ isValid(cardNumber) {
       }
       sumaTotal = sumaTotal + doblarNumeros
    }
-for (let i = 1; i < numeros.length; i + - 2){
+for (let i = 1; i < numeros.length; i + - 2)
    let imparNumeros = numeros[i]
    sumaTotal = sumaTotal + imparNumeros
-}
- return (sumaTotal % 10 === 0);
-  }
-    console.log(validator);
+};
+ return (sumaTotal % 10 === 0);*/
+   
+
+    
+    
+    export default validator;

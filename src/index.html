@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />   
+  <title>Tarjeta valida</title>
+</head>
+
+<body>
+   <div class="contenedor">
+     <form id="formulario" action="">
+       <div class="inputBox">
+         <span>card number</span>
+         <input  id="cardNumber" type="text" minlength="4" maxlength="16" class="card-number-input"   pattern="[0-9]+" >
+       </div>
+
+        
+    <input id="button-form" type="submit" value="aceptar" class="submit-btn">
+  </form>
+</div>
+ <!--asi se comenta en html-->
+  <script src="index.js" type="module">
+  console.log("este es un mensaje en consola");
+  </script>
+    
+</body>
 </html>

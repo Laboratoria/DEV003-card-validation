@@ -1,0 +1,27 @@
+* body{
+  /**asi se comenta en Css*/
+       background: 12;
+       font-family:"Poppins",sans-serif;
+       margin:0; padding:10;
+       box-sizing:border-box;
+       outline:none; border: snone;
+       text-decoration: none;
+       text-transform: uppercase;
+     
+     }
+     
+     .contenedor form{
+     background:gray;
+     border-radius: 5px;
+     box-shadow: 0 10px 15px rgb(0, 225, 0);
+     padding: 20px;
+     width: 600px;
+     }
+     
+     .contenedor form .inputBox span{
+       display: block;
+       color: black;
+       padding-bottom: 5p;
+     }
+     
+     
